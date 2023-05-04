@@ -220,10 +220,13 @@
 
 /* Celulares e dispositivos menores */
 @media(max-width: 480px){
+    .content-container {
+        height: 90%;
+    }
     .content {
         width: 90%;
         display: grid;
-        grid-template-rows: 6fr 2fr 2fr;
+        grid-template-rows: 6fr 1fr 2fr;
         align-items: center;
         justify-items: center;
     }
@@ -247,5 +250,9 @@
     }
     .footer {
         margin-bottom: 30px;
+        font-size: 12px;
+    }
+    .footer span{
+        font: inherit;
     }
 }

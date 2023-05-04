@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripto Price</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/825/825540.png" type="image/x-icon">
+</head>
+<body>
+
+    <div class="container">
+        <div class="content-container">
+            <div class="content">
+                <div class="content-search">
+
+                    <div class="title">
+                        <span>Digite o nome de uma <b>Criptomoeda</b>:</span>
+                    </div>
+
+                    <div class="inputs">
+                        <div class="input">
+                            <input id="searchValue" type="text" placeholder="Sua cripto">
+                        </div>
+                        <div class="sugestao">
+                            <span>Você quis dizer...</span>
+                            <select id="searchItens">
+                                <option>Bitcoin (BTC)</option>
+                                <option>Ether (ETH)</option>
+                                <option>Brazil Real (BRL)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="search">
+                        <button class="btn" id="searchName">Pesquisar</button>
+                    </div>
+
+                </div>
+
+                <div class="divisoria"></div>
+
+                <div class="content-result">
+
+                    <div class="title">
+                        <span id="nameCripto">Brazil Real&nbsp</span>
+                        <span id="simboloCripto">(BRL)</span>:
+                    </div>
+
+                    <div class="price">
+                        <div class="content-price">
+                            <span>R$&nbsp</span>
+                            <span id="value">1.000000</span>
+                        </div>
+                        <span>≈ <span id="unit">R$</span> 1.00</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer">
+                <span>Copyright &copy <span id="data">2023</span> 
+                <a class="cta" href="https://github.com/JohanGarciaO" target="_blank">Johan Garcia</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

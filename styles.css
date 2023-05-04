@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0D1117;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container {
+    width: 75%;
+    height: 75%;
+    background-color: #0a0d11;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content > div {
+    width: 45%;
+    height: 100%;
+}
+
+.divisoria {
+    width: 1px!important;
+    background-color: black!important;
+    height: 90%!important;
+}
+
+.content-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.title {
+    width: 100%;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#simboloCripto, .title span b {
+    font-weight: bold;
+    color: rgba(255, 255, 0, 0.87);
+}
+
+.inputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#searchValue {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.inputs input, select {
+    width: 80%;
+    height: 40px;
+    background-color: transparent;
+    color: rgba(255, 255, 0, 0.87);
+    font-weight: bold;
+    border: none;
+    border-bottom: 1px solid #ccccccaf;
+    outline: none;
+    padding: 0px;
+    font-size: 14px;
+}
+
+.inputs input:focus {
+    border-color: #fff;
+}
+
+.sugestao {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #fff;
+}
+
+#searchItens {
+    color: rgba(255, 255, 0, 0.87);
+    font-weight: bold;
+}
+
+#searchItens option{
+    background-color: #0a0d11!important;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgba(255, 255, 0, 0.87);
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 0, 0.87);
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    transition: .6s;
+}
+
+.btn:hover{
+    background-color: rgba(255, 255, 0, 0.699);
+}
+
+.content-result {
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.content-result div{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-price {
+    display: flex;
+    flex-wrap: wrap;
+    color: rgba(255, 255, 0, 0.87);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.price > span{
+    color: #fff;
+}
+
+.footer {
+    width: 90%;
+    height: 10%;
+    color: #ccccccbd;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.cta {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cta:hover {
+    color: #fff;
+}
+
+/* Computadores */
+@media(max-width: 1280px){
+
+}
+
+/* Tablets e celulares */
+@media(max-width: 768px){
+    .content-price{
+        font-size: 22px;
+    }
+    .price > span{
+        font-size: 14px;
+    }
+    .title {
+        font-size: 18px;
+    }
+    .inputs input, select {
+        width: 100%;
+    }
+}
+
+/* Celulares e dispositivos menores */
+@media(max-width: 480px){
+    .content {
+        width: 90%;
+        display: grid;
+        grid-template-rows: 6fr 2fr 2fr;
+        align-items: center;
+        justify-items: center;
+    }
+    .content > div {
+        width: 90%;
+    }
+    .inputs {
+        justify-content: space-evenly;
+    }
+    .divisoria {
+        height: 1px!important;
+        background-color: black!important;
+        width: 90%!important;
+    }
+    .content-result {
+        display: flex;
+        flex-direction: column;
+    }
+    .content-result .title {
+        margin-top: 0px;
+    }
+    .footer {
+        margin-bottom: 30px;
+    }
+}

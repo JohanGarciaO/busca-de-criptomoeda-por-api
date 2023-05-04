@@ -221,6 +221,7 @@
 /* Celulares e dispositivos menores */
 @media(max-width: 480px){
     .content-container {
+        width: 90%;
         height: 90%;
     }
     .content {
